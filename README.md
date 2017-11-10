@@ -1,4 +1,4 @@
-# 以往的方式：ViewHolder类，是各种控件的引用，converView.setTag(holder)去存储holder，
+# 以往的方式（针对ListVIew的适配器）：ViewHolder类，是各种控件的引用，converView.setTag(holder)去存储holder，
 万能适配器其实是对继承BaseAdapter的适配器的一个封装
 第一步：封装ViewHolder：
   SparseArray容器是一个map，key是int，value是View.
@@ -90,5 +90,6 @@
                 });
 
 
+RecyclerView同理
 
 
